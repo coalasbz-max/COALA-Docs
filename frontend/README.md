@@ -1,5 +1,16 @@
 # React + Vite
 
+## GitHub Pages deployment
+
+The `main` branch is deployed by `.github/workflows/deploy-pages.yml` to
+`https://coalasbz-max.github.io/COALA-Docs/`.
+
+Configure the following repository variables or secrets with the Supabase project
+values before deployment:
+
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_PUBLISHABLE_KEY`
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:
