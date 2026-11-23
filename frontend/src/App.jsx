@@ -9,6 +9,15 @@ import "./App.css";
 const initialDocuments = [];
 
 function App() {
+  if (!supabase) {
+    return (
+      <main style={{ maxWidth: "40rem", margin: "4rem auto", padding: "0 1.5rem", fontFamily: "sans-serif" }}>
+        <h1>Configuration requise</h1>
+        <p>Les variables Supabase du déploiement ne sont pas configurées.</p>
+      </main>
+    );
+  }
+
   const [categories, setCategories] = useState([]);
   const [isLoadingCategories, setIsLoadingCategories] = useState(true);
   const [page, setPage] = useState("dashboard");
