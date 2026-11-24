@@ -781,7 +781,10 @@ if (!isLoggedIn) {
     <div className="login-page">
       <div className="login-card">
         <div className="login-logo">
-  <img src="/logo-coala2.png" alt="Logo COALA" />
+  <img
+  src={`${import.meta.env.BASE_URL}logo-coala2.png`}
+  alt="Logo COALA"
+/>
 </div>
 
         <h1>Bienvenue</h1>
@@ -881,7 +884,10 @@ if (!isLoggedIn) {
       <aside className="sidebar">
         <div className="brand">
           <div className="brand-icon">
-  <img src="/logo-coala.png" alt="Logo COALA" />
+  <img
+  src={`${import.meta.env.BASE_URL}logo-coala.png`}
+  alt="Logo COALA"
+/>
 </div>
           <div>
             <h2>COALA DOCS</h2>
