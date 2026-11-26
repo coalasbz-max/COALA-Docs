@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://coala-docs.onrender.com";
 
 export const api = {
     async getUsers(accessToken) {
